@@ -18,7 +18,11 @@
 
             </div>
 
-            <button type="submit" class="btn btn-default">Publier</button>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Publier</button>
+            </div>
+
+            @include('layouts.error')
         </form>
     </div>
 @endsection
