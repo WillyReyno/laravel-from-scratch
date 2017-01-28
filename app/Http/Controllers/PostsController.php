@@ -29,6 +29,7 @@ class PostsController extends Controller
            'title' => 'required',
            'content' => 'required'
         ]);
+
         Post::create(request(['title', 'body']));
 
         return redirect('/');
