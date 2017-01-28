@@ -12,9 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('about', function () {
-    return view('about');
+    $tasks = [
+        'Faire le tuto laracasts',
+        'Préparer des exercices',
+        'Aider Maxime à déménager'
+    ];
+
+    return view('welcome', compact('tasks'));
 });
